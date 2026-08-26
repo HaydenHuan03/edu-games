@@ -1,0 +1,57 @@
+[gd_scene format=3 uid="uid://dqt11qo8ebxqm"]
+
+[ext_resource type="Script" uid="uid://cmbe0stru0m4s" path="res://scenes/ui/auth_screen.gd" id="1_1i6pt"]
+
+[node name="AuthScreen" type="Control" unique_id=1643934624]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_1i6pt")
+
+[node name="TabContainer" type="TabContainer" parent="." unique_id=474203126]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+current_tab = 0
+
+[node name="Login" type="VBoxContainer" parent="TabContainer" unique_id=932207608]
+layout_mode = 2
+metadata/_tab_index = 0
+
+[node name="LoginPassword" type="LineEdit" parent="TabContainer/Login" unique_id=856881876]
+layout_mode = 2
+secret = true
+
+[node name="LoginButton" type="Button" parent="TabContainer/Login" unique_id=1516584081]
+layout_mode = 2
+
+[node name="LoginStatus" type="Label" parent="TabContainer/Login" unique_id=448267933]
+layout_mode = 2
+
+[node name="SignUp" type="VBoxContainer" parent="TabContainer" unique_id=1244548761]
+visible = false
+layout_mode = 2
+metadata/_tab_index = 1
+
+[node name="SignUpEmail" type="LineEdit" parent="TabContainer/SignUp" unique_id=1794954606]
+layout_mode = 2
+
+[node name="SignUpPassword" type="LineEdit" parent="TabContainer/SignUp" unique_id=1135902221]
+layout_mode = 2
+secret = true
+
+[node name="SignUpConfirmPassword" type="LineEdit" parent="TabContainer/SignUp" unique_id=365023033]
+layout_mode = 2
+secret = true
+
+[node name="SignUpButton" type="Button" parent="TabContainer/SignUp" unique_id=740299488]
+layout_mode = 2
+
+[node name="SignUpStatus" type="Label" parent="TabContainer/SignUp" unique_id=345547433]
+layout_mode = 2

@@ -11,14 +11,22 @@ config_version=5
 [application]
 
 config/name="learning-games"
-run/main_scene="uid://cq1mvamnch66a"
 config/features=PackedStringArray("4.7", "Forward Plus")
 config/icon="res://icon.svg"
+
+[autoload]
+
+Env="*uid://dydxibxsajr08"
+AuthManager="*uid://bxjot2fx35fjl"
 
 [display]
 
 window/stretch/mode="canvas_items"
 window/stretch/aspect="expand"
+
+[editor]
+
+version_control/autoload_on_startup=true
 
 [physics]
 
